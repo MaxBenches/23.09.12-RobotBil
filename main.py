@@ -35,20 +35,15 @@ IN4 = machine.Pin(3, machine.Pin.OUT)
 pwmA = machine.PWM(machine.Pin(4))
 pwmB = machine.PWM(machine.Pin(5))
 
+# PWM frequency
+pwmA.freq(2000)
+pwmB.freq(2000)
+
 """ MAGIC NUMBERS """
 # Dutycycle / Speed of the motor
 dutycycle_up = .5
 dutycycle_down = .5
 dutycycle_stop = 0
-
-
-
-
-
-# PWM frequency
-pwmA.freq(2000)
-pwmB.freq(2000)
-
 
 """ FUNCTIONS """
 
