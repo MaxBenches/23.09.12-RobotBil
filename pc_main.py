@@ -42,7 +42,7 @@ def main():
                         # Insert speaker honking
                         print("HONK HONK")
                     elif controller_input is not None:
-                        msg_send(controller_input, "192.168.0.132", 5005)
+                        msg_send(controller_input, "10.120.0.18", 5005)
                         print(controller_input)
                 break
 
@@ -112,7 +112,7 @@ def get_controller_input():
                 return "B"
             elif pygame.joystick.Joystick(0).get_button(2):
                 return "X"
-            elif pygame.joystick.Joystick(0).get_button(4):
+            elif pygame.joystick.Joystick(0).get_button(3):
                 return "Y"
             elif pygame.joystick.Joystick(0).get_button(6):
                 return "Select"
